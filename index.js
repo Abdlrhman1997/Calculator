@@ -15,8 +15,26 @@ const sum = function(...args) {
     return args.reduce((acc,curr)=>acc/curr);
   }
 
+  function operate(operator, num1, num2){
+    switch (operator){
+        case '+' : 
+        return sum(num1,num2);
+       
 
-  console.log(sum(2,2));
-  console.log(subtract(2,2));
-  console.log(multiply(2,2));
-  console.log(divide(2,2));
+        case '-' : 
+        return subtract(num1,num2);
+        
+
+        case '*' : 
+        return  multiply(num1,num2);
+        
+
+        case '/' : 
+        return   divide(num1,num2);
+        
+    }
+  }
+
+  console.log(operate("", 2, 3));
+
+
