@@ -1,6 +1,8 @@
 # Calculator
 A calculator project that does all of the basic math operators you typically find on simple calculators.
+
 البروجيكت ده طلع ميتين اهلي D": 
+
 please don't look at the code, LOL 
 
 1- i learned a ton from this one 
