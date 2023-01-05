@@ -24,7 +24,12 @@ body{
     border-radius: 10px;
     margin-top: 10px;
     height: 80px;
-    width: 270px;
+    min-width: 270px;
+    font-size: 25px;
+    padding:5px;
+    color: #3e8e41;
+    
+    
     
 }
 
@@ -55,6 +60,9 @@ button{
 
 
 .clear:hover{
+    background-color: red;
+}
+.delete:hover{
     background-color: red;
 }
 
