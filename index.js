@@ -3,7 +3,7 @@ function operate(operator, num1, num2){
       case '+' : 
       return roundNumber(Number(num1)+Number(num2));
      
-      case '-' : 
+      case '−' : 
       return roundNumber(num1-num2);
       
       case '×' : 
@@ -111,7 +111,7 @@ buttons.forEach(function(e){
 
 //I use this function to find the index of the operator, to check if the textContent ends with an operator
        function checkOperator(e){
-        return e === "+" || e === "×" || e === "÷" || e === "-" || e === "%" || e === "%";
+        return e === "+" || e === "×" || e === "÷" || e === "−" || e === "%" || e === "%";
       
       }
 
@@ -128,24 +128,11 @@ function assign_Num1_Num2_Operator(){
   let operatorIndex;
   let expression = screen.firstElementChild.textContent;
   let expressionArray = Array.from(expression);
-  if(expressionArray[0] === "-"){
-     expressionArray.shift();
     operatorIndex = expressionArray.findIndex(checkOperator);
-    num1 += expressionArray.slice(0,operatorIndex);
-    num2 += expression.slice(operatorIndex + 2,expression.length);
-    console.log(num2);
-    operator = expression.charAt(operatorIndex+1);
-    num1 = "-" + num1;
-    arr = [operator,num1,num2];
-  }
-  else{
-    operatorIndex = expressionArray.findIndex(checkOperator);
-    num1 +=expression.slice(0,operatorIndex);
+    num1 += expression.slice(0,operatorIndex);
     num2 += expression.slice(operatorIndex + 1,expression.length);
     operator = expression.charAt(operatorIndex);
     arr = [operator,num1,num2];
-  }
-
       return arr;
    
 }
