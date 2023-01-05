@@ -4,7 +4,9 @@ A calculator project that does all of the basic math operators you typically fin
 please don't look at the code, LOL 
 
 1- i learned a ton from this one 
+
 2- this project is an intermediate not a begginer 
+
 3- it was made without planning, so the code is basically very bad ! 
 
 ~i am planning to redo this project from scratch in the near future.
